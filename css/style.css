@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+/**font-family: 'Lato', sans-serif;**/
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+header{
+    background-color: #f6f9f9;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.banner h1{
+    color: #fff;
+    font-size: 90pt;
+    text-transform: uppercase;
+    font-family:'Lato', sans-serif ;
+}
+.banner span{
+    display: block;    
+    height: 2px;
+    width: 100%;
+    background: #15a4fa;
+}
+.banner p{
+    color: #fff;
+    font-size: 15pt;
+    font-family:'Lato', sans-serif ;
+    margin: 0;
+    padding: 20px 0;
+}
+.banner a{
+    color: #fff;
+    font-size: 15pt;
+    font-family:'Lato', sans-serif ;
+    background: none;
+    border: none;
+    border: 1px solid #15a4fa;
+    padding: 10px 25px;
+    margin-top: 25px;
+}
+.banner a :hover{
+    background-color:  #15a4fa;
+    border: 1px solid transparent;
+}
+.banner .row{
+    min-height: 100vh;
+
+}
+.content{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    color:#ffff;
+    font-size: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 120%;
+    }
+    100%{
+        top: 130%;
+    }
+}
+.simple-design{
+    background: #e9eeee;
+    padding: 50px 0 70px;
+}
+.simple-design h1{
+    color: #2d3950;
+    font-family: 'Lato', sans-serif;
+    font-size: 30pt;
+   
+}
+.simple-design p{
+    color: #999999;
+    font-family: 'Lato', sans-serif;
+    font-size: 15pt;
+}
+.feature{
+    padding: 50px 0;
+}
+.feature h3{
+    margin: 25px 0 15px;
+}
+.feature p{
+
+}
+.optimize{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+.showcase{
+    background: #f9f9f9;    
+}
+.showcase h2{
+    padding-top: 60px;
+}
+.showcase p{
+    padding-bottom: 50px;
+}
+.image{
+    position: relative;
+
+    
+}
+.image::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #5fc3ff9c;
+    transition: .4s all;
+}
+.image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #5fc3ff9c;
+    transition: .4s all;
+}
+.image:hover::before{
+    width: 50%;
+}
+.image:hover::after{
+    width: 50%;
+}
+.image-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:#fff;
+    opacity: 0;
+    font-size: 20px;
+    transform: translate(-50%, -50%);       
+    z-index: 999;
+    transition: .4s all;
+    
+}
+.image-icon i{
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 3px;
+}
+.image:hover .image-icon{
+   opacity: 1;
+}
+.contact{    
+    background-image: url(../images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    position: relative;
+    margin-top: 20px;
+}
+.contact::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d395096;
+
+}
+.stay{
+
+}
+.stay h3{
+    color:#fff;
+}
+.stay p{
+    color:#fff;
+}
+.contact input{
+    background-color: transparent;
+}
+.contact input:focus{
+    background-color: transparent;
+    outline: none;
+}
+.contact textarea{
+    background-color: transparent;
+}
+.contact textarea:focus{
+    background-color: transparent;
+    outline: none;
+}
+.contact input[type="checkbox"]{
+    background-color: #9ba1ab;
+
+}
+.form-check span{
+    color: #fff;
+}
+.btn-custom{    
+    background: transparent;
+    border: none;
+    border: 1px solid #15a4fa;
+    padding: 10px 25px;
+    float: right;
+   
+}
+.btn-custom:hover{
+    background-color:  #15a4fa;
+    border: 1px solid transparent;
+}
+.form-check {
+    position: relative;
+    display: inline;
+    padding-left: 1.25rem;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check form-group{
+    margin-bottom: 0;
+}
